@@ -1,7 +1,7 @@
-let cb: Action
-let mycb: Action
-let e        = "1"
-let param    = 0
+let maqueencb: Action
+let maqueenmycb: Action
+let maqueene        = "1"
+let maqueenparam    = 0
 let alreadyInit=0
 let IrPressEvent=0
 const MOTER_ADDRESSS = 0x10
@@ -84,14 +84,14 @@ namespace maqueen{
     //% mutateText=Packeta
     //% mutateDefaults="myparam:message"
     //% blockId=IR_callbackUser block="on obloq received"
-    export function IR_callbackUser(cb: (packet: Packeta) => void) {
+    export function IR_callbackUser(maqueencb: (packet: Packeta) => void) {
         maqueenInit()
         IR_callback(() => {
             const packet = new Packeta();
-            packet.mye = e;
-            param=getParam();
-            packet.myparam = param;
-            cb(packet)
+            packet.mye = maqueene;
+            maqueenparam=getParam();
+            packet.myparam = maqueenparam;
+            maqueencb(packet)
         });
     }
     
@@ -104,9 +104,9 @@ namespace maqueen{
     
    
     function IR_callback(a: Action): void{
-        cb=a
+        maqueencb=a
         IrPressEvent+=1
-        onPressEvent(IrPressEvent,cb)
+        onPressEvent(IrPressEvent,maqueencb)
     }
     
     //% blockId=ultrasonic_sensor block="sensor unit|%unit"
