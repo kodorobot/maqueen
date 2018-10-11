@@ -1,5 +1,5 @@
 {
-    "name": "maqueen",
+    "name": "maqueen2",
     "version": "0.0.1",
     "description": "Tinkercademy package for ElecFreaks maqueen receiver module",
     "license": "MIT",
@@ -15,7 +15,7 @@
         "RemoteIR.h",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
-        "_locales/zh/maqueen-strings.json"
+        "_locales/zh-tw/maqueen-strings.json"
     ],
     "testFiles": [
         "tests.ts"
