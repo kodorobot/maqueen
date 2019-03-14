@@ -95,6 +95,9 @@ namespace maqueen{
         });
     }
     
+    /**
+      * Get ir message.
+      */
     //% weight=10
     //% blockId=IR_read block="read IR"
     export function IR_read():number{
@@ -109,6 +112,10 @@ namespace maqueen{
         onPressEvent(IrPressEvent,maqueencb)
     }
     
+    /**
+      * Get current distance for ultrasonic .
+      * @param unit distance or time
+      */
     //% blockId=ultrasonic_sensor block="sensor unit|%unit"
     //% weight=95
     export function sensor(unit: PingUnit, maxCmDistance = 500): number {
@@ -134,6 +141,12 @@ namespace maqueen{
         }
     }
     
+    /**
+      * Control certain motor.
+      * @param index motor to drive
+      * @param direction forward or reverse
+      * @param speed speed
+      */
     //% weight=90
     //% blockId=motor_MotorRun block="Motor|%index|dir|%Dir|speed|%speed"
     //% speed.min=0 speed.max=255
@@ -152,6 +165,10 @@ namespace maqueen{
         pins.i2cWriteBuffer(0x10, buf);
     }
     
+    /**
+      * Stop certain motor.
+      * @param motors motor to stop
+      */
     //% weight=20
     //% blockId=motor_motorStop block="Motor stop|%motors"
     //% motors.fieldEditor="gridpicker" motors.fieldOptions.columns=2 
@@ -168,6 +185,9 @@ namespace maqueen{
         pins.i2cWriteBuffer(0x10, buf);
     }
     
+    /**
+      * Stop all motors.
+      */
     //% weight=10
     //% blockId=motor_motorStopAll block="Motor Stop All"
     export function motorStopAll(): void {
@@ -180,6 +200,10 @@ namespace maqueen{
         pins.i2cWriteBuffer(0x10, buf);
     }
     
+    /**
+      * Read certain tracker sensor.
+      * @param patrol patrol
+      */
     //% weight=20
     //% blockId=read_Patrol block="Read Patrol|%patrol"
     //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
@@ -193,6 +217,10 @@ namespace maqueen{
         } 
     }
     
+    /**
+      * Control certain LED.
+      * @param led led
+      */
     //% weight=20
     //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
     //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
