@@ -14,7 +14,7 @@
     "maqueen.MotorRun|block": "馬達|%index|方向|%Dir|速度|%speed",
     "maqueen.IR_callbackUser|block": "當接收到紅外線時運行",
     "maqueen.sensor|block": "超音波距離|%unit",
-    "maqueen.readPatrol|block": "循跡傳感器|%patrol",
+    "maqueen.readPatrol|block": "循跡感測器|%patrol",
     "maqueen.writeLED|block": "LED燈|%led,|%ledswitch",
     "maqueen.IR_read|block": "紅外線的值",
     "maqueen.ServoRun|block": "伺服馬達|%index|角度|%angle",
