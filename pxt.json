@@ -1,7 +1,7 @@
 {
     "name": "maqueen",
-    "version": "0.0.1",
-    "description": "Tinkercademy package for ElecFreaks maqueen receiver module",
+    "version": "0.0.2",
+    "description": "Affordable mini robot designed by DFRobot",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -13,12 +13,14 @@
         "ReceiverIR.cpp",
         "ReceiverIR.h",
         "RemoteIR.h",
-        "TransmitterIR.cpp",
-        "TransmitterIR.h",
-        "_locales/zh/maqueen-strings.json"
+        "_locales/zh/maqueen-strings.json",
+        "shims.d.ts",
+        "README.md"
     ],
     "testFiles": [
-        "tests.ts"
+        "test.ts"
     ],
-    "public": true
+    "public": true,
+    "preferredEditor": "tsprj",
+    "installedVersion": "workspace:2462d827-3d4e-4688-1e5c-a7385548fa34"
 }
