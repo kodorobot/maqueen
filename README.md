@@ -4,8 +4,8 @@
 ## Control the motor
 ```blocks
 // forward
-maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CW, 100)
-maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CW, 100)
+maqueen.motorRun(maqueen.aMotors.M1, maqueen.Dir.CW, 100)
+maqueen.motorRun(maqueen.aMotors.M2, maqueen.Dir.CW, 100)
 basic.pause(100)
 
 // stop
@@ -14,8 +14,8 @@ maqueen.motorStop(maqueen.aMotors.M2)
 basic.pause(100)
 
 // back
-maqueen.MotorRun(maqueen.aMotors.M1, maqueen.Dir.CCW, 100)
-maqueen.MotorRun(maqueen.aMotors.M2, maqueen.Dir.CCW, 100)
+maqueen.motorRun(maqueen.aMotors.M1, maqueen.Dir.CCW, 100)
+maqueen.motorRun(maqueen.aMotors.M2, maqueen.Dir.CCW, 100)
 basic.pause(100)
 
 // stop all
